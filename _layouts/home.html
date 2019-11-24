@@ -5,7 +5,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="{% include css/common.css %}" rel="stylesheet">
+    <link href="{% include css/nav.css %}" rel="stylesheet">
+
     <title>{{pages.title}}</title>
 </head>
 
@@ -28,7 +30,7 @@
     </header>
     <div id="content">
     {{content}}
-    </div>
+    </div>s
         </div>
 </body>
 
