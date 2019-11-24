@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/main.css" rel="stylesheet">
+    <title>{{pages.title}}</title>
+</head>
+
+<body>
+        <div id="container">
+    <header>
+        <div id="logo">
+            <h1><a href="#">{{site.title}}\{%if page.permalink%} {{page.title}} \{%endif%}</a></h1>
+        </div>
+        <nav>
+            <ul>
+            {% assign nav_pages = site.html_pages | sort: 'navWeight' %}
+            {%for p in nav_pages %}
+            {%if p.navWeight%}
+            <li {% if page.url == p.url %} id = "navCurrent" {%endif%}><a  href="{{p.url}}">{{p.title}}</a></li>
+            {%endif%}
+            {%endfor%}
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+    {{content}}
+    </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Fira+Mono|PT+Mono');
+
+html{
+	background-color: rgb(51,51,51);
+	font-family: 'Fira Mono','Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+header{
+	background-color: rgb(51,51,51);
+	padding-top: 0%;
+}
+
+h1 a{
+	
+	font-family: 'PT+Mono', monospace;
+	text-decoration: none;
+	font-size: 40px;
+	/* text-shadow: 2px 2px rgb(100,100,100); */
+	color: white;
+	word-spacing:-0.5em;
+	letter-spacing: 0px;
+	
+}
+h1{
+	margin-bottom: .1%;
+	margin-top: .1%;
+
+}
+h1,h2,h3{
+    text-decoration: none;	
+	font-family: 'PT+Mono','Courier New', Courier, monospace;
+	text-align: left;  
+   
+}
+#content{	
+	flex: 1 1 auto;
+	width:100%;	
+	margin:auto;
+	padding-bottom: 5%;
+	max-width: 1600px;
+	min-width: 600px;
+}
+#container{
+	padding: 0%;
+	margin: 0;
+	background-color: rgb(30,30,30);
+	
+}
