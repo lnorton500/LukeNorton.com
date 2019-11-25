@@ -5,8 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="/css/common.css" rel="stylesheet">
-    <link href="/css/nav.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}\css\main.css" rel="stylesheet">
 
     <title>{{pages.title}}</title>
 </head>
@@ -19,12 +18,9 @@
         </div>
         <nav>
             <ul>
-            {% assign nav_pages = site.html_pages | sort: 'navWeight' %}
-            {%for p in nav_pages %}
-            {%if p.navWeight%}
-            <li {% if page.url == p.url %} id = "navCurrent" {%endif%}><a  href="{{p.url}}">{{p.title}}</a></li>
-            {%endif%}
-            {%endfor%}
+                {% for item in site.data.navigation %}
+                <li {% if page.url == item.link %} id="navCurrent" {%endif%}><a href="{{item.link| prepend:site.baseurl }}">{{item.name}}</a></li>
+                {%endfor%}
             </ul>
         </nav>
     </header>
