@@ -1,10 +1,10 @@
 - link: /
   name: home
 - link: /about/
-  name: About
+  name: about
 - link: /CV/
   name: CV
 - link: /previousWork/
   name: 'previousWork'
-- link: /ContactMe/
-  name: 'Contact Me'
+- link: /contactMe/
+  name: 'contactMe'
