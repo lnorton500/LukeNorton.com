@@ -1,6 +1,6 @@
 ---
 layout: home
 title: 'Contact Me'
-permalink: /ContactMe/
+permalink: /contactMe/
 navWeight: 10
 ---
