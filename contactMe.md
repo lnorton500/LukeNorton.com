@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 'Contact Me'
+title: 'contactMe'
 permalink: /contactMe/
 navWeight: 10
 ---

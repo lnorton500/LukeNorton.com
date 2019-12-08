@@ -1,6 +1,6 @@
 ---
 layout: home
-title: About
+title: about
 permalink: /about/
 navWeight: 2
 ---
