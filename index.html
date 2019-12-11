@@ -1,0 +1,27 @@
+---
+title: 'home'
+layout: home
+navWeight: 1
+---
+<link href="{{ site.baseurl }}\css\index.css" rel="stylesheet">
+
+<h3>Infomation</h3>
+<p>Some Info about this website</p>
+
+<h3>Files</h3>
+<h4>{{site.title}}\</h4>
+<ul>
+    {% for item in site.data.navigation %}
+        {% if item.link != "/" %}
+            <li class="fileList" >
+                <p>│</p>
+                <p>│</p>
+                {% if forloop.last %}
+                    <p>└────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}\</a></p>
+                {%else%}
+                    <p>├────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}\</a></p>
+                {%endif%}
+            </li>
+        {%endif%}
+    {%endfor%}
+</ul>
