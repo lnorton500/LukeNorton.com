@@ -73,26 +73,51 @@ a{
 	text-decoration: none;
 }
 .comment:before{
+	font-size: 25px;
 	color: green;
 	font-family: 'IBM Plex Mono', serif;
 	/* content: "//____________________________________________________________________________________________________"; */
 }
 @media only screen and (max-width:600px){
 	#content{margin-left: 0}
-	.comment:before{content: "//____"}
+	.comment:before{
+		content: "//____";
+		font-size: 20px;
+		
+	}
 }
 @media only screen and (min-width: 600px) {
-	#content{width:90%}	
-	#content{margin-left:5%}
-	#content{margin-right: 5%}
-	.comment:before{content: "//_____________________________________________"}
+	#content{
+		width:90%;
+		margin-left:5%;
+		margin-right: 5%
+	}
+	.comment:before{
+		content: "//____________________________________";
+		font-size: 23px;
+	}
 
-	/* h1 a{color:red} */
+	h1 a{color:red}
 }
 @media only screen and (min-width: 992px) {
-	#content{width:86%}	
-	#content{margin-left:7%}
-	#content{margin-right: 7%}
-	/* h1 a{color: blue} */
-	.comment:before{content: "//________________________________________________________________________"}
+	#content{
+		width:86%;
+		margin-left:7%;
+		margin-right: 7%
+	}
+	h1 a{color: blue}
+	.comment:before{
+		content: "//______________________________________________________________";
+	}
+}
+@media only screen and (min-width: 1200px) {
+	h1 a {color: yellow}
+	#content{
+		width:80%;
+		margin-left:10%;
+		margin-right: 10%
+	}
+	.comment:before{
+		content: "//__________________________________________________________________________";
+	}
 }
