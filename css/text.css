@@ -6,10 +6,8 @@
     text-indent: -1em;
 }
 
-.cv:first-line{
-    /* text-indent: 0em; */
-}
-.cv:before{
+
+.bullet:before{
 	content: "- ";
 }
 ul{
