@@ -37,13 +37,11 @@ h1,h2,h3,h4,h5{
 }
 
 #content{	
-	flex: 1 1 auto;
-	width:100%;	
-	margin:auto;
+	flex: 1 1 auto;	
 	padding-bottom: 5%;
-	max-width: 1600px;
-	min-width: 600px;
+	
 }
+
 #container{
 	padding: 0%;
 	margin: 0;
@@ -77,5 +75,24 @@ a{
 .comment:before{
 	color: green;
 	font-family: 'IBM Plex Mono', serif;
-	content: "//____________________________________________________________________________________________________";
+	/* content: "//____________________________________________________________________________________________________"; */
+}
+@media only screen and (max-width:600px){
+	#content{margin-left: 0}
+	.comment:before{content: "//____"}
+}
+@media only screen and (min-width: 600px) {
+	#content{width:90%}	
+	#content{margin-left:5%}
+	#content{margin-right: 5%}
+	.comment:before{content: "//_____________________________________________"}
+
+	/* h1 a{color:red} */
+}
+@media only screen and (min-width: 992px) {
+	#content{width:86%}	
+	#content{margin-left:7%}
+	#content{margin-right: 7%}
+	/* h1 a{color: blue} */
+	.comment:before{content: "//________________________________________________________________________"}
 }
