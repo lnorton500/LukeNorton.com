@@ -1,6 +1,6 @@
 nav{
 	
-	font-family: "Cutive Mono",'Courier New', Courier, monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 27px;
 	padding: 0;
 	
@@ -9,9 +9,10 @@ nav{
 }
 
 nav li a{
-	font-family: "Cutive Mono",'Courier New', Courier, monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 27px;
-	text-decoration:none;	
+	text-decoration:none;
+	font-weight: lighter;
 	color:rgb(120,120,120);	
 }
 nav li a:hover{

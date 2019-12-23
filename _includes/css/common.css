@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cousine|Cutive+Mono|Fira+Mono|IBM+Plex+Mono|Space+Mono|Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Cutive+Mono|IBM+Plex+Mono|Zilla+Slab&display=swap');
 
 html{
 	background-color: rgb(51,51,51);
@@ -7,6 +7,9 @@ html{
 	padding: 0;
 	color: white;
 }
+body{
+	margin-top: -.75%;
+}
 header{
 	background-color: rgb(51,51,51);
 	padding-top: 0%;
@@ -14,11 +17,11 @@ header{
 
 h1 a{
 	
-	font-family: "Zilla Slab",serif;
+	font-family: "IBM Plex Mono",serif;
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 1.1em;
 	color: white;
-	word-spacing: -0.1em;
+	word-spacing: -0.5em;
 	letter-spacing: 0px;
 	
 }
@@ -29,7 +32,7 @@ h1{
 }
 h1,h2,h3,h4,h5{
     text-decoration: none;	
-	font-family: "Consolas",'Courier New', Courier, monospace;
+	font-family: "IBM Plex Mono",'Courier New', Courier, monospace;
 	text-align: left;  
 	font-weight:normal;
 	margin: 0.5% 0% 0% 0%;
