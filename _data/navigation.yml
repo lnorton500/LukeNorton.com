@@ -4,5 +4,5 @@
   name: about
 - link: /CV/
   name: CV
-- link: /contactMe/
-  name: 'contactMe'
+- link: /contact/
+  name: 'contact'

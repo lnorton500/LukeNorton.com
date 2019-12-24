@@ -1,0 +1,56 @@
+---
+layout: home
+title: 'contact'
+permalink: /contact/
+navWeight: 10
+---
+<link href="{{ site.baseurl }}\css\form.css" rel="stylesheet">
+<h3>Links:</h3>
+<h3>Contact Me Form:</h3>
+
+<form action="https://formspree.io/lnorton500@gmail.com" method="POST" id="contactMe">
+    <fieldset>
+        <legend>Contact Info</legend>
+        <p><br>
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" required>
+            <p>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" required>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label for="phoneNum">Phone Number: </label>
+                <input type="number" name="phoneNum" required>
+            </p>
+            <p>
+                <label for="organisation">Organisation: </label>
+                <input type="text" name="organisation"><span style="color: rgb(120,120,120);"> (optional)</span>
+            </p>
+            <p><label for="role">Role: </label>
+                <input type="text" name="role"><span style="color: rgb(120,120,120);"> (optional)</span></p>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Enquirery</legend>
+        <p><br>
+
+            <p>
+                <label for="reason">Reason of Enquiry: </label>
+                <input type="text" name="reason" required>
+                <p>
+                    <label for="Enquiry">Enquiry: </label><br>
+                    <textarea name="Enquiry" rows="25" cols="90" required>Enter text here...</textarea>
+                </p>
+                <br>
+            </p>
+    </fieldset>
+    <div class="underForm">
+        <p>
+            <input type="submit">
+        </p>
+    </div>
+</form>
