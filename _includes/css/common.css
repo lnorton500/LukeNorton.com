@@ -79,7 +79,9 @@ a{
 	font-size: 25px;
 	color: green;
 	font-family: 'IBM Plex Mono', serif;
-	/* content: "//____________________________________________________________________________________________________"; */
+}
+.comment{
+	padding-left: 0;
 }
 @media only screen and (max-width:600px){
 	#content{margin-left: 0}

@@ -8,6 +8,7 @@
 @media only screen and (min-width:600px){
 p{
 	text-align: justify;
+	padding-left: 2.5%;
 }
 }
 .bullet:before{
@@ -16,5 +17,5 @@ p{
 ul{
 	list-style-type: none;
 	margin-left: 0;
-	padding-left: 0;
+	padding-left: 5%;
 }
