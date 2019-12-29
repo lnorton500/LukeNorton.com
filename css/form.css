@@ -1,52 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+form{
+  padding-right:5%;
+  padding-left:5%;
+}
 label{
-    text-decoration: none;	
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  text-decoration: none;	
 	font-family: "Consolas",'Courier New', Courier, monospace;
 	text-align: left;  
 	font-weight:normal;
-    margin: 0.5% 0% 0% 0%;
-    color: rgb(103, 205, 254);
-   
+  margin: 0.5% 0% 0% 0%;
+  color: rgb(103, 205, 254);
+  
 }
-fieldset, .underForm,.contactDetails,.topSentance{
-	margin: 0 5%;
-	padding: 0 2%;
-	border-radius: 4px;
+.text{
+  float: left;
+  width: 30%;
+}
+.field{
+  float: right;
+  width: 70%
+}
+fieldset{
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.formItem::after{
+  content: "";
+  display: table;
+  clear: both;
 }
-input, textarea{  
-    align-self: center;
-  padding: 2px 2px;
+
+input, textarea{
+  padding: 5px;
   margin: 1px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   background-color: rgb(51,51,51);
   color: white;
+  
 }
-input[type=email]{
-	width: 300px;
+input[type=text],input[type=email],input[type=number], textarea{
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
 }
+
+
 input[type=submit] {
-	background-color: red;
+	background-color: rgb(8, 180, 253);	
   border: none;
-  color: white;
+  color: rgb(51,51,51);
+  /* font-weight: bold; */
   padding: 10px 10px;
-  margin: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
+	font-family: 'IBM Plex Mono', serif;
   border-radius: 5px;
-  font-family:  'Fira Mono','Courier New', Courier, monospace;;
   cursor: pointer;
   float: right;
 }
 
 input[type=submit]:hover {
   background-color: rgb(51,51,51);
-  	color:rgb(8, 180, 253);	
-	text-shadow: 2px 2px 4px #000000;
+  color:rgb(8, 180, 253);	
 }
-.red{
-	color: red;
+
+.formMessage{
+  color: rgb(120,120,120);
+}
+@media screen and (max-width: 600px) {
+  .text, .field, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  form{
+    padding: 0;
+  }
 }

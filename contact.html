@@ -5,48 +5,85 @@ permalink: /contact/
 navWeight: 10
 ---
 <link href="{{ site.baseurl }}\css\form.css" rel="stylesheet">
-<h3>Links:</h3>
+<h3>Links</h3>
+
 <h3>Contact Me</h3>
 
 <form action="https://formspree.io/lnorton500@gmail.com" method="POST" id="contactMe">
-    <br>
     <p class="comment">Contact Info</p>
-    <div>
-        <label for="firstName">First Name: </label>
-        <input type="text" name="firstName" required>
-    </div>
-    <p>
-        <label for="lastName">Last Name: </label>
-        <input type="text" name="lastName" required>
-    </p>
-    <p>
-        <label for="email">Email: </label>
-        <input type="email" name="email" required>
-    </p>
-    <p>
-        <label for="phoneNum">Phone Number: </label>
-        <input type="number" name="phoneNum" required>
-    </p>
-    <p>
-        <label for="organisation">Organisation: </label>
-        <input type="text" name="organisation"><span style="color: rgb(120,120,120);"> (optional)</span>
-    </p>
-    <p><label for="role">Role: </label>
-        <input type="text" name="role"><span style="color: rgb(120,120,120);"> (optional)</span></p>
-    <br>
-    
-    <p class="comment">Message</p>
-    <p>
-        <label for="reason">Reason of Enquiry: </label>
-        <input type="text" name="reason" required>
-        <p>
-            <label for="Enquiry">Enquiry: </label><br>
-            <textarea name="Enquiry" rows="25" cols="90" required>Enter text here...</textarea>
-        </p>
-        <br>
-        <div class="underForm">
-            <p>
-                <input type="submit">
-            </p>
+        <fieldset>
+        <div class="formItem">
+            <div class="text">
+                <label for="firstName">First Name: </label>
+            </div>
+            <div class="field">
+                <input type="text" name="firstName" required>
+            </div>
         </div>
+        <div class="formItem">
+            <div class="text">
+            <label for="lastName">Last Name: </label>
+            </div>
+            <div class="field">
+            <input type="text" name="lastName" required>
+            </div>
+        </div>
+        <div class="formItem">
+            <div class="text">
+            <label for="email">Email: </label>
+            </div>
+            <div class="field">
+            <input type="email" name="email" required>
+            </div>
+        </div>
+        <div class="formItem">
+            <div class="text">
+            <label for="phoneNum">Phone Number: </label>
+            </div>
+            <div class="field">
+            <input type="number" name="phoneNum" required>
+            </div>
+        </div>
+        <div class="formItem">
+            <div class="text">
+            <label for="organisation">Organisation: <span class="formMessage"> (optional)</span></label>
+            </div>
+            <div class="field">
+            <input type="text" name="organisation">
+            </div>
+        </div>
+        <div class="formItem">
+            <div class="text">
+            <label for="role">Role: <span class="formMessage"> (optional)</span></label>
+            </div>
+            <div class="field">
+                <input type="text" name="role">
+            </div>
+        </div>
+        <br>
+    </fieldset>
+    <p class="comment">Message</p>
+    <fieldset>
+    <div class="formItem">
+        <div class="text">
+        <label for="reason">Reason of Enquiry: </label>
+        </div>
+        <div class="field">
+        <input type="text" name="reason" required>
+        </div>
+    </div>
+    <div class="formItem">
+        <div class="text">
+        <label for="Enquiry">Enquiry: </label>
+        </div>
+        <div class="field">
+        <textarea name="Enquiry" cols="30" rows="5" required>Enter text here...</textarea>
+        </div>
+    </div>
+    </fieldset>
+    <fieldset>
+    <div class="formItem">
+        <input type="submit">
+    </div>
+    </fieldset>
 </form>
