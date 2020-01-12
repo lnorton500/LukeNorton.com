@@ -6,9 +6,14 @@ html{
 	margin: 0;
 	padding: 0;
 	color: white;
+	overflow-x: hidden;
+
 }
 body{
+	margin:0%;
 	margin-top: -.75%;
+
+
 }
 header{
 	background-color: rgb(51,51,51);
@@ -30,7 +35,7 @@ h1{
 	margin-top: .1%;
 
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
     text-decoration: none;	
 	font-family: "IBM Plex Mono",'Courier New', Courier, monospace;
 	text-align: left;  
@@ -39,16 +44,35 @@ h1,h2,h3,h4,h5{
    
 }
 
-#content{	
+#window{	
 	flex: 1 1 auto;	
-	padding-bottom: 5%;
+	width:inherit;
+
+	position: fixed;
+	overflow-y: auto;
+	overflow-wrap: break-word;
+	height: 90%;
+	background-color: rgb(30,30,30)
 	
+}
+#content{
+	position: initial;
+	margin: 0;
+	padding-right: 3%;
 }
 
 #container{
 	padding: 0%;
+	padding-right: 0%;
 	margin: 0;
 	background-color: rgb(30,30,30);
+	width:98%;
+	/* padding-left: 5%; */
+	/* padding-left: 5%; */
+
+	margin-bottom: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
 	
 }
 h2{
@@ -67,10 +91,16 @@ h4{
 h5{
 	font-size: 1.3em;
 }
+h6{
+	font-size: 1.25em;
+	display: block;
+
+}
 p{
 	font-size: 1.2em;
 	font-family: "Consolas",'Courier New', Courier, monospace;
 }
+
 a{
 	color: white;
 	text-decoration: none;
@@ -95,10 +125,10 @@ a{
 	}
 }
 @media only screen and (min-width: 600px) {
-	#content{
-		width:90%;
-		margin-left:5%;
-		margin-right: 5%
+	 #content{
+		width:98%;
+		margin-left:1%;
+		margin-right:1%
 	}
 	.comment{
 		font-size: 23px;
@@ -109,19 +139,19 @@ a{
 }
 @media only screen and (min-width: 992px) {
 	#content{
-		width:86%;
-		margin-left:7%;
-		margin-right: 7%
-	}
+		width:94%;
+		margin-left:3%;
+		margin-right: 3%;
+	} 
 	.comment:after{
 		content:"______________________________________________________________";
 	}
 }
 @media only screen and (min-width: 1200px) {
 	#content{
-		width:80%;
-		margin-left:10%;
-		margin-right: 10%
+		width:90%;
+		margin-left:5%;
+		margin-right:5%
 	}
 	.comment:after{
 		content: "__________________________________________________________________________";
