@@ -21,7 +21,7 @@
                         <li {% if page.url == item.link %} id="navCurrent" {%endif%}>
                             <a href="{{item.link| prepend:site.baseurl }}">
                             {% if  item.name == "home" %}
-                            <img src="{{site.baseurl}}\home.svg" height="22" width= "22"/>
+                            <img src="{{site.baseurl}}\assets\svg\home.svg" height="22" width= "22"/>
                             {% else %}
                             {{item.name}}
                             {%endif%}
