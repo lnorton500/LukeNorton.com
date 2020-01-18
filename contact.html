@@ -2,14 +2,23 @@
 layout: home
 title: 'contact'
 permalink: /contact/
-navWeight: 10
 ---
 <link href="{{ site.baseurl }}\css\form.css" rel="stylesheet">
+<link href="{{ site.baseurl }}\css\text.css" rel="stylesheet">
 <h3>Links</h3>
+<br>
+<form>
+    <fieldset>
+        <div class="col-2">
+            <div ><span class="link-label">GitHub:</span></div>
+            <div><span class="link"><a href="https://github.com/lnorton500" target="blank_">https://github.com/lnorton500</a></span></div>        
+        </div>
 
+    </fieldset>
+</form>
 <h3>Contact Me</h3>
 <form action="https://getsimpleform.com/messages?form_api_token=3406b7246cb4590c1b1db80d238681f0" method="post"id="contactMe">
-    <p class="comment">Contact Info</p>
+    <p class="comment">ContactInfo</p>
     <fieldset>
         <div class="formItem">
             <div class="text">
@@ -86,4 +95,5 @@ navWeight: 10
             <input type="submit">
         </div>
     </fieldset>
+    <p class="comment"></p>
 </form>
