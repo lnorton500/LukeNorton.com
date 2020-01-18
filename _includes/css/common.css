@@ -1,6 +1,6 @@
 html{
 	background-color: rgb(51,51,51);
-	font-family: "Consolas",'Courier New', Courier, monospace;
+	font-family: "Consolas", monospace;
 	margin: 0;
 	padding: 0;
 	color: white;
@@ -30,7 +30,7 @@ h1{
 }
 h1,h2,h3,h4,h5,h6{
     text-decoration: none;	
-	font-family: "IBM Plex Mono",'Courier New', Courier, monospace;
+	font-family: "IBM Plex Mono", monospace;
 	text-align: left;  
 	font-weight:normal;
 	margin: 0.5% 0% 0% 0%;   
@@ -90,7 +90,7 @@ h6{
 }
 p{
 	font-size: 1.2em;
-	font-family: "Consolas",'Courier New', Courier, monospace;
+	font-family: "Consolas", monospace;
 }
 
 a{
