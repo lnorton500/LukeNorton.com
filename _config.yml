@@ -2,7 +2,7 @@ title: LukeNorton
 description: >-
   I am a second year Computer Science student at Sheffield Hallam Universty currently looking for a placement between my second and third years. This website was developed with Jekyll and is hosted on GitHub pages.
   These pages are still very much in development, but please feel free to have a look around!
-baseurl: /LukeNorton.com/ 
+baseurl: /LukeNorton.com 
 # Build settings
 theme: minima
 plugins:
