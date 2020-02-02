@@ -117,6 +117,9 @@ a{
 	.comment{
 		font-size: 20px;
 	}
+	h1 a{
+		font-size: 0.9em;
+	}
 
 	.download{
 		width:100%;
