@@ -2,7 +2,7 @@
 title: 'index'
 layout: home
 ---
-<link href="{{ site.baseurl }}\css\index.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/index.css" rel="stylesheet">
 <br>
 <h3><strong>Hello and Welcome to my Website!</strong></h3>
 <br>
@@ -11,7 +11,7 @@ layout: home
 
 <p class="comment"></p>
 
-<h4>{{site.title}}\</h4>
+<h4>{{site.title}}/</h4>
 <ul>
     {% for item in site.data.navigation %}
         {% if item.link != "/" %}
@@ -19,9 +19,9 @@ layout: home
                 <p>│</p>
                 <p>│</p>
                 {% if forloop.last %}
-                    <p>└────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}\</a></p>
+                    <p>└────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}/</a></p>
                 {%else%}
-                    <p>├────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}\</a></p>
+                    <p>├────<a href="{{item.link| prepend:site.baseurl }}">{{item.name}}/</a></p>
                 {%endif%}
             </li>
         {%endif%}
